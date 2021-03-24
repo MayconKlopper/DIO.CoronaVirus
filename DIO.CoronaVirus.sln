@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Presentation", "2-Presentation", "{877BB62B-6D6B-481A-8DC2-3949FCF760E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-ExternlService", "3-ExternlService", "{9A03BBEB-936A-4CC7-9D5D-C11169FECC98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Domain", "1-Domain", "{713203E6-B4C9-4F0F-BAA8-69DA19868959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIO.CoronaVirus.Domain", "DIO.CoronaVirus.Domain\DIO.CoronaVirus.Domain.csproj", "{8B05CD22-F7D5-4E26-B910-5A5A61518DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIO.CoronaVirus.ExternalService.Mongo", "DIO.CoronaVirus.ExternalService.Mongo\DIO.CoronaVirus.ExternalService.Mongo.csproj", "{D7CEB31B-BBCD-430D-8159-C34F563AF1B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIO.CoronaVirus.Presentation.API", "DIO.CoronaVirus.Presentation.API\DIO.CoronaVirus.Presentation.API.csproj", "{50506DEA-66F9-44F4-8276-12BA1827E7C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B05CD22-F7D5-4E26-B910-5A5A61518DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B05CD22-F7D5-4E26-B910-5A5A61518DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B05CD22-F7D5-4E26-B910-5A5A61518DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B05CD22-F7D5-4E26-B910-5A5A61518DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CEB31B-BBCD-430D-8159-C34F563AF1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CEB31B-BBCD-430D-8159-C34F563AF1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CEB31B-BBCD-430D-8159-C34F563AF1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CEB31B-BBCD-430D-8159-C34F563AF1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50506DEA-66F9-44F4-8276-12BA1827E7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50506DEA-66F9-44F4-8276-12BA1827E7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50506DEA-66F9-44F4-8276-12BA1827E7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50506DEA-66F9-44F4-8276-12BA1827E7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B05CD22-F7D5-4E26-B910-5A5A61518DBF} = {713203E6-B4C9-4F0F-BAA8-69DA19868959}
+		{D7CEB31B-BBCD-430D-8159-C34F563AF1B9} = {9A03BBEB-936A-4CC7-9D5D-C11169FECC98}
+		{50506DEA-66F9-44F4-8276-12BA1827E7C8} = {877BB62B-6D6B-481A-8DC2-3949FCF760E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACB1062D-F7EA-47EF-A477-0EA4C562AD22}
+	EndGlobalSection
+EndGlobal

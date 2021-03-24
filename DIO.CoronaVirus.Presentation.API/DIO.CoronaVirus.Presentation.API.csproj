@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DIO.CoronaVirus.Domain\DIO.CoronaVirus.Domain.csproj" />
+    <ProjectReference Include="..\DIO.CoronaVirus.ExternalService.Mongo\DIO.CoronaVirus.ExternalService.Mongo.csproj" />
+  </ItemGroup>
+
+
+</Project>
