@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIO.CoronaVirus.Presentation.API</name>
+    </assembly>
+    <members>
+        <member name="T:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController">
+            <summary>
+            Recurso para controlar Infectados pelo corona Virus
+            </summary>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Buscar">
+            <summary>
+            Busca todos os infectados cadastrados
+            </summary>
+            <returns>Todos infectados</returns>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.BuscarPorID(System.Guid)">
+            <summary>
+            Busca um infectado pelo Identidicador úniconico
+            </summary>
+            <param name="ID">Identificador único</param>
+            <returns>Um Infectado</returns>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Adicionar(DIO.CoronaVirus.Domain.Models.Request.InfectadoRequest)">
+            <summary>
+            Adiciona um infectado a base de dados
+            </summary>
+            <param name="model">Dados do Infectado</param>
+            <returns>O Infectado cadastrado</returns>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Atualizar(DIO.CoronaVirus.Domain.Models.Request.InfectadoRequest)">
+            <summary>
+            Atualiza ou modifica os dados de um infectado
+            </summary>
+            <param name="model">Infectado com dados modificados ou atualizados</param>
+            <returns>Infectado atualizado ou modificado</returns>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Deletar(System.Guid)">
+            <summary>
+            Exclui um infectado da base de dados
+            </summary>
+            <param name="ID">Identidicador único do infectado</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

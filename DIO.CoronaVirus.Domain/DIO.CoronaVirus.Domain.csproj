@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entitites\" />
-    <Folder Include="Models\" />
-    <Folder Include="Repositories\" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.1" />
   </ItemGroup>
 
 </Project>
