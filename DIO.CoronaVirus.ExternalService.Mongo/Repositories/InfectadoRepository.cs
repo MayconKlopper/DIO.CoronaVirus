@@ -19,21 +19,30 @@ namespace DIO.CoronaVirus.ExternalService.Mongo.Repositories
             this.infectadoCollection = this.mongoContext.DB.GetCollection<Infectado>(typeof(Infectado).Name.ToLower());
         }
 
-        public void Adicionar(Infectado infectado)
+        public Infectado Adicionar(Infectado infectado)
         {
+            infectado.ID = Guid.NewGuid();
             this.infectadoCollection.InsertOne(infectado);
+
+            return infectado;
         }
 
-        public void Adicionar(IList<Infectado> infectados)
+        public IList<Infectado> Adicionar(IList<Infectado> infectados)
         {
+            foreach (var infectado in infectados)
+            {
+                infectado.ID = Guid.NewGuid();
+            }
             this.infectadoCollection.InsertMany(infectados);
+
+            return infectados;
         }
 
         public Infectado Atualizar(Infectado infectado)
         {
-            var entity = this.infectadoCollection.FindOneAndReplace(x => x.ID.Equals(infectado.ID), infectado);
+            this.infectadoCollection.ReplaceOne(x => x.ID.Equals(infectado.ID), infectado);
 
-            return entity;
+            return infectado;
         }
 
         public void Atualizar(IList<Infectado> infectados)

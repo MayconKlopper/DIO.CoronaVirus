@@ -15,11 +15,11 @@
             </summary>
             <returns>Todos infectados</returns>
         </member>
-        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.BuscarPorID(System.Guid)">
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Buscar(System.Guid)">
             <summary>
             Busca um infectado pelo Identidicador úniconico
             </summary>
-            <param name="ID">Identificador único</param>
+            <param name="ID">Identidicador único do infectado</param>
             <returns>Um Infectado</returns>
         </member>
         <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Adicionar(DIO.CoronaVirus.Domain.Models.Request.InfectadoRequest)">
@@ -28,6 +28,13 @@
             </summary>
             <param name="model">Dados do Infectado</param>
             <returns>O Infectado cadastrado</returns>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Adicionar(System.Collections.Generic.List{DIO.CoronaVirus.Domain.Models.Request.InfectadoRequest})">
+            <summary>
+            Adiciona uma lista de infectados a base de dados
+            </summary>
+            <param name="models">Lista de Infectados</param>
+            <returns>Os Infectados cadastrados</returns>
         </member>
         <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Atualizar(DIO.CoronaVirus.Domain.Models.Request.InfectadoRequest)">
             <summary>
@@ -41,6 +48,13 @@
             Exclui um infectado da base de dados
             </summary>
             <param name="ID">Identidicador único do infectado</param>
+            <returns></returns>
+        </member>
+        <member name="M:DIO.CoronaVirus.Presentation.API.Controllers.InfectadoController.Deletar(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Exclui uma lista de infectados da base de dados
+            </summary>
+            <param name="IDs">Lista com os identificadores únicos dos infectados</param>
             <returns></returns>
         </member>
     </members>

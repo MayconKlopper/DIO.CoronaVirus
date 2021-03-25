@@ -6,8 +6,8 @@ namespace DIO.CoronaVirus.Domain.Repositories
 {
     public interface IInfectadoRepository
     {
-        void Adicionar(Infectado infectado);
-        void Adicionar(IList<Infectado> infectados);
+        Infectado Adicionar(Infectado infectado);
+        IList<Infectado> Adicionar(IList<Infectado> infectados);
         Infectado Atualizar(Infectado infectado);
         void Atualizar(IList<Infectado> infectados);
         void Deletar(Guid ID);

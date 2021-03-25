@@ -24,7 +24,7 @@ namespace DIO.CoronaVirus.Domain.Entitites
 
         public static implicit operator Infectado(InfectadoRequest model)
         {
-            var entity = new Infectado(Guid.NewGuid(), model.Nome, model.DataNascimento, model.Sexo, model.Latitude, model.Longitude);
+            var entity = new Infectado(model.ID, model.Nome, model.DataNascimento, model.Sexo, model.Latitude, model.Longitude);
 
             return entity;
         }
